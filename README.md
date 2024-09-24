@@ -35,8 +35,8 @@ Este proyecto utiliza FastAPI para crear un pequeño dashboard que se conecta a 
 ## Instalación
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/usuario/dashboard-fastapi.git
-   cd dashboard-fastapi   
+   git clone https://github.com/carjizo/api-dashboard-python.git
+   cd dashboard-fastapi
 2. Preparar entorno virtual (linux):
    ```bash
    python -m venv env
