@@ -44,10 +44,13 @@ Este proyecto utiliza FastAPI para crear un pequeño dashboard que se conecta a 
    source env/bin/activate
 
    pip install -r requirements.txt
-3. Ejecutar app:
+3. Configurar credenciales Mysql en archivo src/config/config.py:
+   ```bash
+   DATABASE_URL = "mysql+pymysql://user:password@localhost/user_info_db"
+4. Ejecutar app:
    ```bash
    uvicorn src.app:app --reload
-4. Acceder: http://127.0.0.1:8000/index
+5. Acceder: http://127.0.0.1:8000/index
 ## Documentación (enpoints CRUD)
 http://127.0.0.1:8000/docs
 ## Index
