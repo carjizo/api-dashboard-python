@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard FastAPI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Estilo personalizado para la tabla */
+        table {
+            margin-top: 20px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Dashboard</h1>
+        <h2 class="mt-4">Tabla de Registros</h2>
+        <div class="table-responsive">
+            {{ table|safe }}
+        </div>
+
+        <h2 class="mt-4">Gráfico de Barras: Relación Edad vs Salario</h2>
+        <div class="mt-3">
+            {{ barras_html|safe }}
+        </div>
+
+        <h2 class="mt-4">Gráfico Circular: Personas por Ciudad</h2>
+        <div class="mt-3">
+            {{ pie_html|safe }}
+        </div>
+    </div>
+</body>
+</html>
